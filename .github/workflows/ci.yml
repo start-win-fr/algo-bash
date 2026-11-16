@@ -3,7 +3,7 @@ name: Script Bash
 on:
     push:
         branches: [main] # déclanche la CI seulement au push sur main
-        paths: ["**.sh"] # déclanche la CI uniquement si des fichiers .sh sont modifiés
+        # paths: ["**.sh"] # déclanche la CI uniquement si des fichiers .sh sont modifiés
     pull_request:
     schedule:
         - cron: "* * * * *" # Déclanche la CI toutes les minutes
