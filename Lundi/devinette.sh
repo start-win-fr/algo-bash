@@ -9,7 +9,7 @@ max_essais=7
 while (( essais < max_essais )); do
     #echo "Votre propostion : "
     #read prop
-    read -p "Votre proposition : " prop
+    read -pr "Votre proposition : " prop
     (( essais++ ))
 
     if (( prop < secret )); then #si condition

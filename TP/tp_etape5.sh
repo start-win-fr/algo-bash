@@ -51,7 +51,7 @@ while (( erreurs < 7 )); do
     fi
 
     # Saisie d'une lettre
-    read -p "Une lettre : " choix
+    read -pr "Une lettre : " choix
     trouvees+=$choix
 
     # Bonne ou mauvaise lettre ?

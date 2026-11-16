@@ -12,7 +12,7 @@ essais=0
 max_essais=7
 
 while (( essais < max_essais )); do
-    read -p "Votre proposition : " prop
+    read -pr "Votre proposition : " prop
     (( essais++ ))
 
     if (( prop < secret )); then

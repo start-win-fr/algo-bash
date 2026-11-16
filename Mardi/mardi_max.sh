@@ -10,4 +10,4 @@ for n in "${valeurs[@]}";do
     fi
 done
 
-echo $max
+echo "$max"

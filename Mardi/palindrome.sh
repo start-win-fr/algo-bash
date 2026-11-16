@@ -1,7 +1,7 @@
 #!/bin/bash
 
 nettoyer() { # minuscules, sans espaces
-    echo "$1" | tr 'A-Z' 'a-z' | tr -d ' '
+    echo "$1" | tr '[:upper:]' '[:lower:]' | tr -d ' '
 }
 
 inverser() {

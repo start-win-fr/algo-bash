@@ -43,10 +43,10 @@ while true; do
         break   # Sort de la boucle while → fin du jeu
     fi
 
-    # read -p "message" variable
+    # read -pr "message" variable
     # Affiche le message, attend que l'utilisateur tape quelque chose,
     # puis stocke la saisie dans $choix
-    read -p "Une lettre : " choix
+    read -pr "Une lettre : " choix
 
     # On ajoute la lettre proposée à la liste des lettres trouvées
     # Même si elle est fausse : elle sera simplement ignorée à l'affichage

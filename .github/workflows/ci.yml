@@ -16,3 +16,6 @@ jobs:
                     for script in */*.sh; do
                         bash -n "$script"
                     done
+            
+            -   name: Analyser avec shellcheck
+                run: shellcheck **/*.sh

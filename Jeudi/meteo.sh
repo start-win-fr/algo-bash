@@ -44,6 +44,6 @@ done
 
 echo "Plus chaude : ${temperatures[imax]}"
 echo "Plus froide : ${temperatures[imin]}"
-echo "Écart : $(( ${temperatures[imax]} - ${temperatures[imin]} ))"
+echo "Écart : $(( temperatures[imax] - temperatures[imin] ))"
 
 echo "Le jour le plus chaud est ${jours[imax]} avec ${temperatures[imax]} degrés"

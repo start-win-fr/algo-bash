@@ -42,7 +42,7 @@ while (( erreurs < 7 )); do
     fi
 
     # Demande une lettre au joueur
-    read -p "Une lettre : " choix
+    read -pr "Une lettre : " choix
 
     # Mémorise la proposition
     trouvees+=$choix

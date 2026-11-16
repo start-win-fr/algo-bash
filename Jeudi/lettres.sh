@@ -17,4 +17,4 @@ compter_lettre "$1" "$2"
 nb=$?
 
 echo "$nb"
-echo "<<"$2">> apparaît $nb fois dans <<"$1">>"
+echo "<<\"$2\">> apparaît $nb fois dans <<\"$1\">>"

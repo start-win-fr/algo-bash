@@ -47,4 +47,4 @@ compter_admis() {
 }
 
 notes=("$@")
-compter_admis $notes
+compter_admis "${notes[@]}"
