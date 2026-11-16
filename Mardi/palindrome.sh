@@ -15,6 +15,6 @@ inverser() {
     echo "$reverse"
 }
 
-est_palindrome() {
+# est_palindrome() {
     # kayak => kayak
-}
+# }
