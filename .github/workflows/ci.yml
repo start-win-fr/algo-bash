@@ -22,7 +22,7 @@ jobs:
 
             -   name: Résumé
                 run: |
-                    nb=$(find . -maxdepth 1 -name "*/*.sh" | wc -l)
+                    nb=$(find . -maxdepth 2 -name "*.sh" | wc -l)
                     lignes=$(cat */*.sh | wc -l)
                     {
                         echo "## Statistiques du dépôt"
