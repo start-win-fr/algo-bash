@@ -1,0 +1,18 @@
+name: Script Bash
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    bash:
+        runs-on: ubuntu-26.04
+        steps:
+            -   name: Récupérer le code
+                uses: actions/checkout@v7
+
+            -   name: Vérifier la syntaxe
+                run: |
+                    for script in *.sh; do
+                        bash -n "$script"
+                    done
