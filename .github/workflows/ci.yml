@@ -6,7 +6,7 @@ on:
         # paths: ["**.sh"] # déclanche la CI uniquement si des fichiers .sh sont modifiés
     pull_request:
     schedule:
-        - cron: "* * * * *" # Déclanche la CI toutes les minutes
+        - cron: "*/5 * * * *" # Déclanche la CI toutes les minutes
 
 jobs:
     bash:
