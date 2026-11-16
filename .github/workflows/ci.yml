@@ -19,3 +19,16 @@ jobs:
             
             -   name: Analyser avec shellcheck
                 run: shellcheck **/*.sh
+
+            -   name: Résumé
+                run: |
+                    nb=$(find . -maxdepth 1 -name "*.sh" | wc -l)
+                    lignes=$(cat */*.sh | wc -l)
+                    {
+                        echo "## Statistiques du dépôt"
+                        echo ""
+                        echo "| Mesure | Valeur |"
+                        echo "|---|---|"
+                        echo "| Fichiers bash | $nb |"
+                        echo "| Lignes de code | $lignes |"
+                    } >> "$GITHUB_STEP_SUMMARY"
